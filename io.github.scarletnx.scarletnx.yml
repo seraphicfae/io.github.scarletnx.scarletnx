@@ -20,8 +20,6 @@ modules:
   - name: scarletnx
     buildsystem: cmake
     builddir: true
-    config-opts:
-      - -DSNX_BUNDLED_SDL3=ON
     build-options:
       append-path: /usr/lib/sdk/llvm22/bin
       prepend-ld-library-path: /usr/lib/sdk/llvm22/lib
@@ -34,16 +32,11 @@ modules:
         aarch64:
           cflags: -march=armv8-a -mtune=generic -O3 -pipe
           cxxflags: -march=armv8-a -mtune=generic -O3 -pipe
-      env:
-        AR: llvm-ar
-        CC: clang
-        CXX: clang++
-        RANLIB: llvm-ranlib
     sources:
       - type: git
         url: https://github.com/scarletnx/ScarletNX
-        tag: 9d52
-        commit: 9d529c091d774a13e55ff403981f36f3ee53bf75
+        tag: nightly
+        commit: 46122d0b2583769bcbc0be3c0d0adf35769433aa
       - generated-sources.yml
       - type: file
         path: io.github.scarletnx.scarletnx.metainfo.xml
