@@ -1,0 +1,57 @@
+app-id: io.github.scarletnx.scarletnx
+runtime: org.freedesktop.Platform
+runtime-version: '26.08'
+sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.llvm22
+command: scarletnx
+
+finish-args:
+  - --device-if=all:!has-input-device
+  - --device=dri
+  - --device=input
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --socket=pulseaudio
+  - --share=ipc
+  - --filesystem=xdg-run/app/com.discordapp.Discord:ro
+
+modules:
+  - name: scarletnx
+    buildsystem: cmake
+    builddir: true
+    config-opts:
+      - -DSNX_BUNDLED_SDL3=ON
+    build-options:
+      append-path: /usr/lib/sdk/llvm22/bin
+      prepend-ld-library-path: /usr/lib/sdk/llvm22/lib
+      strip: true
+      no-debuginfo: true
+      arch:
+        x86_64:
+          cflags: -march=x86-64-v3 -mtune=generic -O3 -pipe
+          cxxflags: -march=x86-64-v3 -mtune=generic -O3 -pipe
+        aarch64:
+          cflags: -march=armv8-a -mtune=generic -O3 -pipe
+          cxxflags: -march=armv8-a -mtune=generic -O3 -pipe
+      env:
+        AR: llvm-ar
+        CC: clang
+        CXX: clang++
+        RANLIB: llvm-ranlib
+    sources:
+      - type: git
+        url: https://github.com/scarletnx/ScarletNX
+        tag: 9d52
+        commit: 9d529c091d774a13e55ff403981f36f3ee53bf75
+      - generated-sources.yml
+      - type: file
+        path: io.github.scarletnx.scarletnx.metainfo.xml
+
+  - name: metainfo
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 ../io.github.scarletnx.scarletnx.metainfo.xml /app/share/metainfo/io.github.scarletnx.scarletnx.metainfo.xml
+    sources:
+      - type: file
+        path: io.github.scarletnx.scarletnx.metainfo.xml

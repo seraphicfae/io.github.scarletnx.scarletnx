@@ -1,0 +1,50 @@
+- type: file
+  dest: .cache/cpm/cpm
+  url: https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.43.2/CPM.cmake
+  sha256: 49a3bef91ceb65bb66d57255e12d1ffd22abc2f6408fa9fe4534c544a2f232aa
+  dest-filename: CPM_0.43.2.cmake
+
+- type: archive
+  dest: .cache/cpm/lz4/3af8
+  url: https://github.com/lz4/lz4/releases/download/v1.10.0/lz4-1.10.0.tar.gz
+  sha256: 537512904744b35e232912055ccf8ec66d768639ff3abe5788d90d792ec5f48b
+
+- type: archive
+  dest: .cache/cpm/openssl/008c
+  url: https://github.com/openssl/openssl/releases/download/openssl-4.0.3/openssl-4.0.3.tar.gz
+  sha256: 325b5c806167c13b40b1ffeadfe0248197c00eccc4cf123ec1e28d2d2fd216d9
+
+- type: archive
+  dest: .cache/cpm/ffmpeg/85c0
+  url: https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz
+  sha256: 8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e
+
+- type: archive
+  dest: .cache/cpm/vulkan-headers/ebcf
+  url: https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.365.tar.gz
+  sha256: ed832b3292cce324ebba6522fd2d3004bf1b797fa49bfbcad0b302ff23d56abc
+
+- type: archive
+  dest: .cache/cpm/volk/1ccf
+  url: https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.4.363.0.tar.gz
+  sha256: 1547d8d74395d4048fb3f4a6313da56db626e89b55db238d0d7e8944c8a645f3
+
+- type: archive
+  dest: .cache/cpm/vulkanmemoryallocator/985e
+  url: https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/archive/refs/tags/v3.4.0.tar.gz
+  sha256: 822aa850c6ce77346ae96a8a1d351d52e77e85929f35363849a0a4e638e0a2a1
+
+- type: archive
+  dest: .cache/cpm/glslang/470d
+  url: https://github.com/KhronosGroup/glslang/archive/refs/tags/16.6.0.tar.gz
+  sha256: 9c09b901149c729df745057dafa815278aaa101b84d2b6e14f16a42de52f97f2
+
+- type: archive
+  dest: .cache/cpm/sdl3/653f
+  url: https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.4.18.tar.gz
+  sha256: c4b08b950bd29d83caae0ab8d884298d27046a9d30700fb42841c50992665c90
+
+- type: archive
+  dest: .cache/cpm/hactool/f7148daad624ba90-8d8513b465a6cf6b-969d8a4a9389ef6b
+  url: https://github.com/SciresM/hactool/archive/1d64a83450e025622f3468c28fc4164dad2c5ef6.tar.gz
+  sha256: f7148daad624ba909f5ae253210734b1a0ce19e89a7914b6cf71401f7134ebbc
