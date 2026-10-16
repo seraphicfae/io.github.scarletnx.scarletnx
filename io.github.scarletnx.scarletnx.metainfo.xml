@@ -45,8 +45,8 @@
     <url type="vcs-browser">https://scarletnx.github.io</url>
     <url type="contribute">https://github.com/scarletnx/ScarletNX</url>
     <releases>
-        <release date="2026-10-11" version="142">
-            <url type="details">https://github.com/scarletnx/ScarletNX/releases/tag/upstream-v142</url>
+        <release date="1970-01-01" version="nightly">
+            <url type="details">https://github.com/scarletnx/ScarletNX/releases/tag/nightly</url>
         </release>
     </releases>
     <supports>
