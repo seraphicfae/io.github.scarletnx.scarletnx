@@ -45,6 +45,6 @@
   sha256: c4b08b950bd29d83caae0ab8d884298d27046a9d30700fb42841c50992665c90
 
 - type: archive
-  dest: .cache/cpm/hactool/f7148daad624ba90-8d8513b465a6cf6b-969d8a4a9389ef6b
+  dest: .cache/cpm/hactool/8018
   url: https://github.com/SciresM/hactool/archive/1d64a83450e025622f3468c28fc4164dad2c5ef6.tar.gz
   sha256: f7148daad624ba909f5ae253210734b1a0ce19e89a7914b6cf71401f7134ebbc

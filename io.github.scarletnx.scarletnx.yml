@@ -35,8 +35,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/scarletnx/ScarletNX
-        tag: nightly
-        commit: 46122d0b2583769bcbc0be3c0d0adf35769433aa
+        tag: ad8c
+        commit: ad8ca39b885903258688f571bd9567b1f591506d
       - generated-sources.yml
       - type: file
         path: io.github.scarletnx.scarletnx.metainfo.xml
@@ -44,7 +44,7 @@ modules:
   - name: metainfo
     buildsystem: simple
     build-commands:
-      - install -Dm644 ../io.github.scarletnx.scarletnx.metainfo.xml /app/share/metainfo/io.github.scarletnx.scarletnx.metainfo.xml
+      - install -Dm644 io.github.scarletnx.scarletnx.metainfo.xml /app/share/metainfo/io.github.scarletnx.scarletnx.metainfo.xml
     sources:
       - type: file
         path: io.github.scarletnx.scarletnx.metainfo.xml
