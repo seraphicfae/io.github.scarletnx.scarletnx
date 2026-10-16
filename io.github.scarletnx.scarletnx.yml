@@ -14,7 +14,6 @@ finish-args:
   - --socket=fallback-x11
   - --socket=pulseaudio
   - --share=ipc
-  - --filesystem=xdg-run/app/com.discordapp.Discord:ro
 
 modules:
   - name: scarletnx
