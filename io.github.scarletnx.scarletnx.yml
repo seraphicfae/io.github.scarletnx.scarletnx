@@ -34,8 +34,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/scarletnx/ScarletNX
-        tag: ad8c
-        commit: ad8ca39b885903258688f571bd9567b1f591506d
+        tag: '1545'
+        commit: 1545636e9ec7e0c60ea8f2310e418c82483da9c2
       - generated-sources.yml
       - type: file
         path: io.github.scarletnx.scarletnx.metainfo.xml
@@ -43,7 +43,11 @@ modules:
   - name: metainfo
     buildsystem: simple
     build-commands:
+      - install -Dm644 /app/share/applications/scarletnx.desktop /app/share/applications/io.github.scarletnx.scarletnx.desktop
+      - desktop-file-edit --set-key=Icon --set-value=io.github.scarletnx.scarletnx /app/share/applications/io.github.scarletnx.scarletnx.desktop
+      - install -Dm644 /app/share/icons/hicolor/scalable/apps/wimsy.svg /app/share/icons/hicolor/scalable/apps/io.github.scarletnx.scarletnx.svg
       - install -Dm644 io.github.scarletnx.scarletnx.metainfo.xml /app/share/metainfo/io.github.scarletnx.scarletnx.metainfo.xml
+
     sources:
       - type: file
         path: io.github.scarletnx.scarletnx.metainfo.xml
