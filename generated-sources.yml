@@ -35,9 +35,9 @@
   sha256: 822aa850c6ce77346ae96a8a1d351d52e77e85929f35363849a0a4e638e0a2a1
 
 - type: archive
-  dest: .cache/cpm/glslang/470d
-  url: https://github.com/KhronosGroup/glslang/archive/refs/tags/16.6.0.tar.gz
-  sha256: 9c09b901149c729df745057dafa815278aaa101b84d2b6e14f16a42de52f97f2
+  dest: .cache/cpm/glslang-tools/1850
+  url: https://github.com/KhronosGroup/glslang/releases/download/16.6.0/glslang-16.6.0-linux-x86_64-release.tar.gz
+  sha256: 2c34071f56ecf39d16233294d3739cf43f981fd39080f2fd9dccb782101191ce
 
 - type: archive
   dest: .cache/cpm/sdl3/653f
@@ -51,25 +51,40 @@
 
 - type: file
   dest: .cache/cpm/opensans/5d09
-  url:  https://raw.githubusercontent.com/google/fonts/4e24bf1805f1526cd1ce3e39447d5f8e6f1f6b67/apache/opensans/OpenSans-Regular.ttf
+  url: https://raw.githubusercontent.com/google/fonts/4e24bf1805f1526cd1ce3e39447d5f8e6f1f6b67/apache/opensans/OpenSans-Regular.ttf
   sha256: 13c03e22a633919beb2847c58c8285fb8a735ee97097d7c48fd403f8294b05f8
 
 - type: file
   dest: .cache/cpm/yuzuossextension/cd90
-  url:  https://raw.githubusercontent.com/eden-emulator/mirror/2b87305d319f0bd04da36fb96314934f37b12637/src/core/file_sys/system_archive/data/font_nintendo_extended.cpp
+  url: https://raw.githubusercontent.com/eden-emulator/mirror/2b87305d319f0bd04da36fb96314934f37b12637/src/core/file_sys/system_archive/data/font_nintendo_extended.cpp
   sha256: 6fbbf5176ff4fd2024f9d150c889477f6b45ece4ac5e45d51286e32f8b13a6f2
 
 - type: archive
   dest: .cache/cpm/vulkanmemoryallocator/3.4.0
-  url:  https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/archive/refs/tags/v3.4.0.tar.gz
+  url: https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/archive/refs/tags/v3.4.0.tar.gz
   sha256: 822aa850c6ce77346ae96a8a1d351d52e77e85929f35363849a0a4e638e0a2a1
 
 - type: archive
   dest: .cache/cpm/plutovg/fefa
-  url:  https://github.com/sammycage/plutovg/archive/refs/tags/v1.3.3.tar.gz
+  url: https://github.com/sammycage/plutovg/archive/refs/tags/v1.3.3.tar.gz
   sha256: 2b0d17a6e016f47b86f9c00e2cb82600041b1ea1f7d2a00c2d46ae542cbfed3c
 
 - type: archive
   dest: .cache/cpm/lunasvg/0d86
-  url:  https://github.com/sammycage/lunasvg/archive/refs/tags/v3.5.0.tar.gz
+  url: https://github.com/sammycage/lunasvg/archive/refs/tags/v3.5.0.tar.gz
   sha256: 1abf1472ee6c4d19797916e8cc3c2e4b628e0d81178ffac60bdb0d457e32c690
+
+- type: archive
+  dest: .cache/cpm/enet/6385
+  url: https://github.com/lsalzman/enet/archive/refs/tags/v1.3.18.tar.gz
+  sha256: 28603c895f9ed24a846478180ee72c7376b39b4bb1287b73877e5eae7d96b0dd
+
+- type: archive
+  dest: .cache/cpm/zstd/089f
+  url: https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz
+  sha256: eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3
+
+- type: file
+  dest: .cache/cpm/renderdoc_app/a2a6
+  url: https://raw.githubusercontent.com/baldurk/renderdoc/v1.46/renderdoc/api/app/renderdoc_app.h
+  sha256: b7005e7dc34c3635046868bbd76d81b9b055aede0f56daa0bd39fedee0639ffb
