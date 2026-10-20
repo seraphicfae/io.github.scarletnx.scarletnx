@@ -34,8 +34,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/scarletnx/ScarletNX
-        tag: 'f82a'
-        commit: f82ac1f018c8c283579c120eeffe5f3f81e1648c
+        tag: 'bd54'
+        commit: bd5454906de0396689a3ad92339d90fa3186bc5d
       - generated-sources.yml
       - type: file
         path: io.github.scarletnx.scarletnx.metainfo.xml
