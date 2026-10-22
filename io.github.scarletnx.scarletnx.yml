@@ -34,11 +34,9 @@ modules:
     sources:
       - type: git
         url: https://github.com/scarletnx/ScarletNX
-        tag: 'bd54'
-        commit: bd5454906de0396689a3ad92339d90fa3186bc5d
+        tag: 'e05b'
+        commit: e05b3ccb5ceff6e13891e12d329dc24ae0a5593f
       - generated-sources.yml
-      - type: file
-        path: io.github.scarletnx.scarletnx.metainfo.xml
 
   - name: metainfo
     buildsystem: simple

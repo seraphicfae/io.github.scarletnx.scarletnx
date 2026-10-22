@@ -49,10 +49,10 @@
   url: https://github.com/SciresM/hactool/archive/1d64a83450e025622f3468c28fc4164dad2c5ef6.tar.gz
   sha256: f7148daad624ba909f5ae253210734b1a0ce19e89a7914b6cf71401f7134ebbc
 
-- type: file
-  dest: .cache/cpm/opensans/5d09
-  url: https://raw.githubusercontent.com/google/fonts/4e24bf1805f1526cd1ce3e39447d5f8e6f1f6b67/apache/opensans/OpenSans-Regular.ttf
-  sha256: 13c03e22a633919beb2847c58c8285fb8a735ee97097d7c48fd403f8294b05f8
+- type: archive
+  dest: .cache/cpm/dejavusans/f663
+  url: https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2
+  sha256: fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7
 
 - type: file
   dest: .cache/cpm/yuzuossextension/cd90
@@ -60,7 +60,7 @@
   sha256: 6fbbf5176ff4fd2024f9d150c889477f6b45ece4ac5e45d51286e32f8b13a6f2
 
 - type: archive
-  dest: .cache/cpm/vulkanmemoryallocator/3.4.0
+  dest: .cache/cpm/vulkanmemoryallocator/985e
   url: https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/archive/refs/tags/v3.4.0.tar.gz
   sha256: 822aa850c6ce77346ae96a8a1d351d52e77e85929f35363849a0a4e638e0a2a1
 
