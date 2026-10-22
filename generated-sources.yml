@@ -38,6 +38,7 @@
   dest: .cache/cpm/glslang-tools/1850
   url: https://github.com/KhronosGroup/glslang/releases/download/16.6.0/glslang-16.6.0-linux-x86_64-release.tar.gz
   sha256: 2c34071f56ecf39d16233294d3739cf43f981fd39080f2fd9dccb782101191ce
+  strip-components: 0
 
 - type: archive
   dest: .cache/cpm/sdl3/653f
