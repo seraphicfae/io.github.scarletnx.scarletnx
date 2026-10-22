@@ -1,0 +1,71 @@
+{
+  "app-id": "io.github.scarletnx.scarletnx",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "26.08",
+  "sdk": "org.freedesktop.Sdk",
+  "sdk-extensions": [
+    "org.freedesktop.Sdk.Extension.llvm22"
+  ],
+  "command": "scarletnx",
+  "finish-args": [
+    "--device-if=all:!has-input-device",
+    "--device=dri",
+    "--device=input",
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--socket=pulseaudio",
+    "--share=ipc"
+  ],
+  "modules": [
+    {
+      "name": "scarletnx",
+      "buildsystem": "cmake",
+      "builddir": true,
+      "build-options": {
+        "append-path": "/usr/lib/sdk/llvm22/bin",
+        "prepend-ld-library-path": "/usr/lib/sdk/llvm22/lib",
+        "strip": true,
+        "no-debuginfo": true,
+        "arch": {
+          "x86_64": {
+            "cflags": "-march=x86-64-v3 -mtune=generic -O3 -pipe",
+            "cxxflags": "-march=x86-64-v3 -mtune=generic -O3 -pipe"
+          },
+          "aarch64": {
+            "cflags": "-march=armv8-a -mtune=generic -O3 -pipe",
+            "cxxflags": "-march=armv8-a -mtune=generic -O3 -pipe"
+          }
+        }
+      },
+      "config-opts": [
+        "-DBUILD_TESTING=OFF",
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/scarletnx/ScarletNX",
+          "tag": "98b3",
+          "commit": "98b30622adf84e3fa4b6b1050dd188a4aef09d3f"
+        },
+        "dependencies.json"
+      ]
+    },
+    {
+      "name": "metainfo",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm644 /app/share/applications/scarletnx.desktop /app/share/applications/io.github.scarletnx.scarletnx.desktop",
+        "desktop-file-edit --set-key=Icon --set-value=io.github.scarletnx.scarletnx /app/share/applications/io.github.scarletnx.scarletnx.desktop",
+        "install -Dm644 /app/share/icons/hicolor/scalable/apps/wimsy.svg /app/share/icons/hicolor/scalable/apps/io.github.scarletnx.scarletnx.svg",
+        "install -Dm644 io.github.scarletnx.scarletnx.metainfo.xml /app/share/metainfo/io.github.scarletnx.scarletnx.metainfo.xml"
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "path": "io.github.scarletnx.scarletnx.metainfo.xml"
+        }
+      ]
+    }
+  ]
+}
