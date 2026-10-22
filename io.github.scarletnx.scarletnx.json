@@ -3,14 +3,12 @@
   "runtime": "org.freedesktop.Platform",
   "runtime-version": "26.08",
   "sdk": "org.freedesktop.Sdk",
-  "sdk-extensions": [
-    "org.freedesktop.Sdk.Extension.llvm22"
-  ],
+  "sdk-extensions": ["org.freedesktop.Sdk.Extension.llvm22"],
   "command": "scarletnx",
   "finish-args": [
     "--device-if=all:!has-input-device",
-    "--device=dri",
     "--device=input",
+    "--device=dri",
     "--socket=wayland",
     "--socket=fallback-x11",
     "--socket=pulseaudio",
@@ -37,10 +35,7 @@
           }
         }
       },
-      "config-opts": [
-        "-DBUILD_TESTING=OFF",
-        "-DCMAKE_BUILD_TYPE=Release"
-      ],
+      "config-opts": ["-DBUILD_TESTING=OFF", "-DCMAKE_BUILD_TYPE=Release"],
       "sources": [
         {
           "type": "git",
