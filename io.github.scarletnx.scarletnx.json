@@ -35,13 +35,13 @@
           }
         }
       },
-      "config-opts": ["-DBUILD_TESTING=OFF", "-DCMAKE_BUILD_TYPE=Release"],
+      "config-opts": ["-DBUILD_TESTING=OFF", "-DCMAKE_BUILD_TYPE=Release", "-DSNX_BUILD_3DS=OFF", "-DSNX_BUILD_VITA=OFF"],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/scarletnx/ScarletNX",
-          "tag": "98b3",
-          "commit": "98b30622adf84e3fa4b6b1050dd188a4aef09d3f"
+          "tag": "a5b76d0ae96f6f914acbeff93940044d3a8962fe",
+          "commit": "a5b76d0ae96f6f914acbeff93940044d3a8962fe"
         },
         "dependencies.json"
       ]
@@ -52,14 +52,7 @@
       "build-commands": [
         "install -Dm644 /app/share/applications/scarletnx.desktop /app/share/applications/io.github.scarletnx.scarletnx.desktop",
         "desktop-file-edit --set-key=Icon --set-value=io.github.scarletnx.scarletnx /app/share/applications/io.github.scarletnx.scarletnx.desktop",
-        "install -Dm644 /app/share/icons/hicolor/scalable/apps/wimsy.svg /app/share/icons/hicolor/scalable/apps/io.github.scarletnx.scarletnx.svg",
-        "install -Dm644 io.github.scarletnx.scarletnx.metainfo.xml /app/share/metainfo/io.github.scarletnx.scarletnx.metainfo.xml"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "path": "io.github.scarletnx.scarletnx.metainfo.xml"
-        }
+        "install -Dm644 /app/share/icons/hicolor/scalable/apps/wimsy.svg /app/share/icons/hicolor/scalable/apps/io.github.scarletnx.scarletnx.svg"
       ]
     }
   ]
