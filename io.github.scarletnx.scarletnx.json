@@ -47,7 +47,7 @@
       ]
     },
     {
-      "name": "metainfo",
+      "name": "bootstrap",
       "buildsystem": "simple",
       "build-commands": [
         "install -Dm644 /app/share/applications/scarletnx.desktop /app/share/applications/io.github.scarletnx.scarletnx.desktop",
