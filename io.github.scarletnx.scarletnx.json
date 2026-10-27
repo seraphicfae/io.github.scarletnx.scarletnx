@@ -35,13 +35,13 @@
           }
         }
       },
-      "config-opts": ["-DBUILD_TESTING=OFF", "-DCMAKE_BUILD_TYPE=Release", "-DSNX_BUILD_3DS=OFF", "-DSNX_BUILD_VITA=OFF"],
+      "config-opts": ["-DBUILD_TESTING=OFF", "-DCMAKE_BUILD_TYPE=Release", "-DSNX_BUILD_3DS=ON", "-DSNX_BUILD_VITA=ON"],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/scarletnx/ScarletNX",
-          "tag": "a5b76d0ae96f6f914acbeff93940044d3a8962fe",
-          "commit": "a5b76d0ae96f6f914acbeff93940044d3a8962fe"
+          "tag": "b5c617592fe81dfd1afb0642d9ebc4b82f16d7bf",
+          "commit": "b5c617592fe81dfd1afb0642d9ebc4b82f16d7bf"
         },
         "dependencies.json"
       ]
@@ -50,9 +50,17 @@
       "name": "bootstrap",
       "buildsystem": "simple",
       "build-commands": [
-        "install -Dm644 /app/share/applications/scarletnx.desktop /app/share/applications/io.github.scarletnx.scarletnx.desktop",
+        "mv /app/share/applications/scarletnx.desktop /app/share/applications/io.github.scarletnx.scarletnx.desktop",
         "desktop-file-edit --set-key=Icon --set-value=io.github.scarletnx.scarletnx /app/share/applications/io.github.scarletnx.scarletnx.desktop",
-        "install -Dm644 /app/share/icons/hicolor/scalable/apps/wimsy.svg /app/share/icons/hicolor/scalable/apps/io.github.scarletnx.scarletnx.svg"
+        "mv /app/share/icons/hicolor/16x16/apps/wimsy.png /app/share/icons/hicolor/16x16/apps/io.github.scarletnx.scarletnx.png",
+        "mv /app/share/icons/hicolor/22x22/apps/wimsy.png /app/share/icons/hicolor/22x22/apps/io.github.scarletnx.scarletnx.png",
+        "mv /app/share/icons/hicolor/24x24/apps/wimsy.png /app/share/icons/hicolor/24x24/apps/io.github.scarletnx.scarletnx.png",
+        "mv /app/share/icons/hicolor/32x32/apps/wimsy.png /app/share/icons/hicolor/32x32/apps/io.github.scarletnx.scarletnx.png",
+        "mv /app/share/icons/hicolor/48x48/apps/wimsy.png /app/share/icons/hicolor/48x48/apps/io.github.scarletnx.scarletnx.png",
+        "mv /app/share/icons/hicolor/64x64/apps/wimsy.png /app/share/icons/hicolor/64x64/apps/io.github.scarletnx.scarletnx.png",
+        "mv /app/share/icons/hicolor/128x128/apps/wimsy.png /app/share/icons/hicolor/128x128/apps/io.github.scarletnx.scarletnx.png",
+        "mv /app/share/icons/hicolor/256x256/apps/wimsy.png /app/share/icons/hicolor/256x256/apps/io.github.scarletnx.scarletnx.png",
+        "mv /app/share/icons/hicolor/scalable/apps/wimsy.svg /app/share/icons/hicolor/scalable/apps/io.github.scarletnx.scarletnx.svg"
       ]
     }
   ]

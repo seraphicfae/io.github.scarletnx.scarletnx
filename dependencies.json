@@ -14,15 +14,27 @@
   },
   {
     "type": "archive",
-    "dest": ".cache/cpm/openssl/008c",
-    "url": "https://github.com/openssl/openssl/releases/download/openssl-4.0.3/openssl-4.0.3.tar.gz",
-    "sha256": "325b5c806167c13b40b1ffeadfe0248197c00eccc4cf123ec1e28d2d2fd216d9"
+    "dest": ".cache/cpm/xxhash/c49c",
+    "url": "https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.3.tar.gz",
+    "sha256": "aae608dfe8213dfd05d909a57718ef82f30722c392344583d3f39050c7f29a80"
   },
   {
     "type": "archive",
-    "dest": ".cache/cpm/ffmpeg/85c0",
-    "url": "https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz",
-    "sha256": "8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e"
+    "dest": ".cache/cpm/enet/6385",
+    "url": "https://github.com/lsalzman/enet/archive/refs/tags/v1.3.18.tar.gz",
+    "sha256": "28603c895f9ed24a846478180ee72c7376b39b4bb1287b73877e5eae7d96b0dd"
+  },
+  {
+    "type": "archive",
+    "dest": ".cache/cpm/zstd/089f",
+    "url": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz",
+    "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3"
+  },
+  {
+    "type": "archive",
+    "dest": ".cache/cpm/openssl/008c",
+    "url": "https://github.com/openssl/openssl/releases/download/openssl-4.0.3/openssl-4.0.3.tar.gz",
+    "sha256": "325b5c806167c13b40b1ffeadfe0248197c00eccc4cf123ec1e28d2d2fd216d9"
   },
   {
     "type": "archive",
@@ -37,35 +49,58 @@
     "sha256": "1547d8d74395d4048fb3f4a6313da56db626e89b55db238d0d7e8944c8a645f3"
   },
   {
-    "type": "archive",
-    "dest": ".cache/cpm/vulkanmemoryallocator/985e",
-    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/archive/refs/tags/v3.4.0.tar.gz",
-    "sha256": "822aa850c6ce77346ae96a8a1d351d52e77e85929f35363849a0a4e638e0a2a1"
+    "type": "file",
+    "dest": ".cache/cpm/azaharmiidata/99c8",
+    "url": "https://raw.githubusercontent.com/azahar-emu/azahar/36ae10f555f73fb4e8d05cb676583efc67ecacef/externals/open_source_archives/include/mii.app.romfs.h",
+    "sha256": "4538bb4964ce4449732adc0bbf0faf69d7c054a0eee6d5f1dafce17bad409ad1"
+  },
+  {
+    "type": "file",
+    "dest": ".cache/cpm/azaharcountrylist/a352",
+    "url": "https://raw.githubusercontent.com/azahar-emu/azahar/a1517612d37f17e673849e04673a0f3c146d6208/externals/open_source_archives/include/country_list.app.romfs.h",
+    "sha256": "bd1c384c9788f99ed2cf9157727820c4c0000f6bbc01843ff8642a32e6f90651"
+  },
+  {
+    "type": "file",
+    "dest": ".cache/cpm/azaharsharedfont/8331",
+    "url": "https://raw.githubusercontent.com/azahar-emu/azahar/7f1303a8344724598015a3e48a4bc5aef77090fc/externals/open_source_archives/include/shared_font.app.romfs.h",
+    "sha256": "316a05284c0746bcd1b5623c54ff770f2db736bdb90a592c2eda176e2c3ac6c1"
+  },
+  {
+    "type": "file",
+    "dest": ".cache/cpm/azaharbadwordlist/91fa",
+    "url": "https://raw.githubusercontent.com/azahar-emu/azahar/8a2c44be5688db1cea22ba7c485e8befc892e673/externals/open_source_archives/include/bad_word_list.app.romfs.h",
+    "sha256": "fe040590fa035e2602c9ce25ba3cf6a208fcb72cb9d53945cbc5747610ad4e15"
   },
   {
     "type": "archive",
-    "dest": ".cache/cpm/glslang-tools/1850",
-    "url": "https://github.com/KhronosGroup/glslang/releases/download/16.6.0/glslang-16.6.0-linux-x86_64-release.tar.gz",
-    "sha256": "2c34071f56ecf39d16233294d3739cf43f981fd39080f2fd9dccb782101191ce",
-    "strip-components": 0
+    "dest": ".cache/cpm/ffmpeg/85c0",
+    "url": "https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz",
+    "sha256": "8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e"
   },
   {
-    "type": "archive",
-    "dest": ".cache/cpm/sdl3/653f",
-    "url": "https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.4.18.tar.gz",
-    "sha256": "c4b08b950bd29d83caae0ab8d884298d27046a9d30700fb42841c50992665c90"
+    "type": "file",
+    "dest": ".cache/cpm/notosansjpsubset/1125",
+    "url": "https://raw.githubusercontent.com/scarletnx/ScarletNX/777f377013806bc4cdbbc0306eca6e7e9c835df2/dist/fonts/NotoSansJP-Subset.ttf",
+    "sha256": "0941fc22edbe0b3b9e8306d4a2feae5e9c0fbd25942600564cc3edb69da88e62"
   },
   {
-    "type": "archive",
-    "dest": ".cache/cpm/hactool/8018",
-    "url": "https://github.com/SciresM/hactool/archive/1d64a83450e025622f3468c28fc4164dad2c5ef6.tar.gz",
-    "sha256": "f7148daad624ba909f5ae253210734b1a0ce19e89a7914b6cf71401f7134ebbc"
+    "type": "file",
+    "dest": ".cache/cpm/notosansscsubset/47d4",
+    "url": "https://raw.githubusercontent.com/scarletnx/ScarletNX/777f377013806bc4cdbbc0306eca6e7e9c835df2/dist/fonts/NotoSansSC-Subset.ttf",
+    "sha256": "fa874173ff129ef89f6e24e432ab14a51124a21aae7a1860e9c8146337631312"
   },
   {
-    "type": "archive",
-    "dest": ".cache/cpm/dejavusans/f663",
-    "url": "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2",
-    "sha256": "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+    "type": "file",
+    "dest": ".cache/cpm/notosanstcsubset/fa2e",
+    "url": "https://raw.githubusercontent.com/scarletnx/ScarletNX/777f377013806bc4cdbbc0306eca6e7e9c835df2/dist/fonts/NotoSansTC-Subset.ttf",
+    "sha256": "58aac9005ce3f61a1ed1bf052fce327b4a97e99540c45a25da23a8bf162402fa"
+  },
+  {
+    "type": "file",
+    "dest": ".cache/cpm/notosanskrsubset/9f95",
+    "url": "https://raw.githubusercontent.com/scarletnx/ScarletNX/777f377013806bc4cdbbc0306eca6e7e9c835df2/dist/fonts/NotoSansKR-Subset.ttf",
+    "sha256": "ce9a4a8c87c60350440b8e0c77c0af77738ed86a145c85ce031cddf51dbbb9eb"
   },
   {
     "type": "file",
@@ -78,6 +113,31 @@
     "dest": ".cache/cpm/vulkanmemoryallocator/985e",
     "url": "https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/archive/refs/tags/v3.4.0.tar.gz",
     "sha256": "822aa850c6ce77346ae96a8a1d351d52e77e85929f35363849a0a4e638e0a2a1"
+  },
+  {
+    "type": "file",
+    "dest": ".cache/cpm/renderdoc_app/a2a6",
+    "url": "https://raw.githubusercontent.com/baldurk/renderdoc/v1.46/renderdoc/api/app/renderdoc_app.h",
+    "sha256": "b7005e7dc34c3635046868bbd76d81b9b055aede0f56daa0bd39fedee0639ffb"
+  },
+  {
+    "type": "file",
+    "dest": ".cache/cpm/tracy/a2a6",
+    "url": "https://github.com/wolfpld/tracy/archive/refs/tags/v0.14.1.tar.gz",
+    "sha256": "bf4af567e9c7524d07f3caa745fad02fb33bd5694f11910750382d1efbb251c1"
+  },
+  {
+    "type": "archive",
+    "dest": ".cache/cpm/sdl3/653f",
+    "url": "https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.4.18.tar.gz",
+    "sha256": "c4b08b950bd29d83caae0ab8d884298d27046a9d30700fb42841c50992665c90"
+  },
+  {
+    "type": "archive",
+    "dest": ".cache/cpm/glslang-tools/1850",
+    "url": "https://github.com/KhronosGroup/glslang/releases/download/16.6.0/glslang-16.6.0-linux-x86_64-release.tar.gz",
+    "sha256": "2c34071f56ecf39d16233294d3739cf43f981fd39080f2fd9dccb782101191ce",
+    "strip-components": 0
   },
   {
     "type": "archive",
@@ -93,20 +153,8 @@
   },
   {
     "type": "archive",
-    "dest": ".cache/cpm/enet/6385",
-    "url": "https://github.com/lsalzman/enet/archive/refs/tags/v1.3.18.tar.gz",
-    "sha256": "28603c895f9ed24a846478180ee72c7376b39b4bb1287b73877e5eae7d96b0dd"
-  },
-  {
-    "type": "archive",
-    "dest": ".cache/cpm/zstd/089f",
-    "url": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz",
-    "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3"
-  },
-  {
-    "type": "file",
-    "dest": ".cache/cpm/renderdoc_app/a2a6",
-    "url": "https://raw.githubusercontent.com/baldurk/renderdoc/v1.46/renderdoc/api/app/renderdoc_app.h",
-    "sha256": "b7005e7dc34c3635046868bbd76d81b9b055aede0f56daa0bd39fedee0639ffb"
+    "dest": ".cache/cpm/hactool/8018",
+    "url": "https://github.com/SciresM/hactool/archive/1d64a83450e025622f3468c28fc4164dad2c5ef6.tar.gz",
+    "sha256": "f7148daad624ba909f5ae253210734b1a0ce19e89a7914b6cf71401f7134ebbc"
   }
 ]
