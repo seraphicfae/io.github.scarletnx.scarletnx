@@ -38,6 +38,12 @@
   },
   {
     "type": "archive",
+    "dest": ".cache/cpm/jemalloc/f3aa",
+    "url": "https://github.com/jemalloc/jemalloc/releases/download/5.4.0/jemalloc-5.4.0.tar.bz2",
+    "sha256": "200776fac271093e7c2f21edd6d62657ecd2be578d9328633f2a86bfa6ef4f1d"
+  },
+  {
+    "type": "archive",
     "dest": ".cache/cpm/vulkan-headers/ebcf",
     "url": "https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.365.tar.gz",
     "sha256": "ed832b3292cce324ebba6522fd2d3004bf1b797fa49bfbcad0b302ff23d56abc"
@@ -138,6 +144,12 @@
     "url": "https://github.com/KhronosGroup/glslang/releases/download/16.6.0/glslang-16.6.0-linux-x86_64-release.tar.gz",
     "sha256": "2c34071f56ecf39d16233294d3739cf43f981fd39080f2fd9dccb782101191ce",
     "strip-components": 0
+  },
+  {
+    "type": "archive",
+    "dest": ".cache/cpm/miniz/d48d",
+    "url": "https://github.com/richgel999/miniz/releases/download/3.1.2/miniz-3.1.2.zip",
+    "sha256": "f0446d863f9c19926ad9483c523fdc42e42b8d4a6a431d27e09d49c79a140d9a"
   },
   {
     "type": "archive",
