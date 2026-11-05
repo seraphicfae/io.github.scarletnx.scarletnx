@@ -14,7 +14,8 @@
     "--socket=wayland",
     "--socket=fallback-x11",
     "--socket=pulseaudio",
-    "--share=ipc"
+    "--share=ipc",
+    "--share=network"
   ],
   "modules": [
     {
