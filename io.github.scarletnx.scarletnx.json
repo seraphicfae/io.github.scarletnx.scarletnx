@@ -3,25 +3,24 @@
   "runtime": "org.freedesktop.Platform",
   "runtime-version": "26.08",
   "sdk": "org.freedesktop.Sdk",
-  "sdk-extensions": ["org.freedesktop.Sdk.Extension.llvm22"],
   "command": "scarletnx",
+  "sdk-extensions": ["org.freedesktop.Sdk.Extension.llvm22"],
   "rename-desktop-file": "scarletnx.desktop",
   "rename-icon": "wimsy",
   "finish-args": [
-    "--device-if=all:!has-input-device",
-    "--device=input",
-    "--device=dri",
+    "--share=network",
+    "--share=ipc",
     "--socket=wayland",
     "--socket=fallback-x11",
     "--socket=pulseaudio",
-    "--share=ipc",
-    "--share=network"
+    "--device=dri",
+    "--device=input",
+    "--device-if=all:!has-input-device"
   ],
   "modules": [
     {
       "name": "scarletnx",
       "buildsystem": "cmake",
-      "builddir": true,
       "build-options": {
         "build-args": ["--share=network"],
         "append-path": "/usr/lib/sdk/llvm22/bin",
@@ -45,6 +44,7 @@
           "RANLIB": "llvm-ranlib"
         }
       },
+      "builddir": true,
       "config-opts": [
         "-DBUILD_TESTING=OFF",
         "-DCMAKE_BUILD_TYPE=Release",
@@ -55,8 +55,7 @@
         {
           "type": "git",
           "url": "https://github.com/scarletnx/ScarletNX",
-          "tag": "fd86bc425ae856ea75ef8001ffe3f53f6c07eea2",
-          "commit": "fd86bc425ae856ea75ef8001ffe3f53f6c07eea2"
+          "commit": "7ff5677baf413fb8349c098083cc8e473256dd0e"
         }
       ]
     }
