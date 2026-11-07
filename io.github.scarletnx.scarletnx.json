@@ -29,19 +29,13 @@
         "no-debuginfo": true,
         "arch": {
           "x86_64": {
-            "cflags": "-march=x86-64-v3 -mtune=generic -O3 -pipe",
-            "cxxflags": "-march=x86-64-v3 -mtune=generic -O3 -pipe"
+            "cflags": "-march=x86-64-v3 -O3 -pipe",
+            "cxxflags": "-march=x86-64-v3 -O3 -pipe"
           },
           "aarch64": {
-            "cflags": "-march=armv8-a -mtune=generic -O3 -pipe",
-            "cxxflags": "-march=armv8-a -mtune=generic -O3 -pipe"
+            "cflags": "-march=armv8-a -O3 -pipe",
+            "cxxflags": "-march=armv8-a -O3 -pipe"
           }
-        },
-        "env": {
-          "AR": "llvm-ar",
-          "CC": "clang",
-          "CXX": "clang++",
-          "RANLIB": "llvm-ranlib"
         }
       },
       "builddir": true,
@@ -55,7 +49,7 @@
         {
           "type": "git",
           "url": "https://github.com/scarletnx/ScarletNX",
-          "commit": "7ff5677baf413fb8349c098083cc8e473256dd0e"
+          "commit": "3468cf2410b8b4b44d5b2123c36079c4c50563a1"
         }
       ]
     }
