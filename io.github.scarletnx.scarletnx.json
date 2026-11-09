@@ -4,7 +4,7 @@
   "runtime-version": "26.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "scarletnx",
-  "sdk-extensions": ["org.freedesktop.Sdk.Extension.llvm22"],
+  "sdk-extensions": ["org.freedesktop.Sdk.Extension.llvm23"],
   "rename-desktop-file": "scarletnx.desktop",
   "rename-icon": "wimsy",
   "finish-args": [
@@ -23,8 +23,8 @@
       "buildsystem": "cmake",
       "build-options": {
         "build-args": ["--share=network"],
-        "append-path": "/usr/lib/sdk/llvm22/bin",
-        "prepend-ld-library-path": "/usr/lib/sdk/llvm22/lib",
+        "append-path": "/usr/lib/sdk/llvm23/bin",
+        "prepend-ld-library-path": "/usr/lib/sdk/llvm23/lib",
         "strip": true,
         "no-debuginfo": true,
         "arch": {
