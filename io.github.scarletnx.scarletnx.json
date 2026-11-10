@@ -45,6 +45,10 @@
         "-DSNX_BUILD_3DS=ON",
         "-DSNX_BUILD_VITA=ON"
       ],
+      "post-install": [
+        "mkdir /app/lib",
+        "cp /usr/lib/sdk/llvm23/lib/libLLVM.so.23.1 /app/lib/"
+      ],
       "sources": [
         {
           "type": "git",
