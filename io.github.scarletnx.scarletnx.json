@@ -7,6 +7,14 @@
   "sdk-extensions": ["org.freedesktop.Sdk.Extension.llvm23"],
   "rename-desktop-file": "scarletnx.desktop",
   "rename-icon": "wimsy",
+  "cleanup": [
+    "/include",
+    "/share/cmake",
+    "/share/pkgconfig",
+    "/lib/cmake",
+    "/lib/debug",
+    "/lib/pkgconfig"
+  ],
   "finish-args": [
     "--share=network",
     "--share=ipc",
@@ -19,8 +27,36 @@
   ],
   "modules": [
     {
+      "name": "spirv-headers",
+      "buildsystem": "cmake-ninja",
+      "builddir": true,
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/KhronosGroup/SPIRV-Headers.git",
+          "commit": "496543121ce6419f23d6fa5d7194ba66c36212d2"
+        }
+      ]
+    },
+    {
+      "name": "spirv-tools",
+      "buildsystem": "cmake-ninja",
+      "config-opts": [
+        "-DSPIRV-Headers_SOURCE_DIR=/app",
+        "-DSPIRV_SKIP_TESTS=ON"
+      ],
+      "builddir": true,
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/KhronosGroup/SPIRV-Tools.git",
+          "commit": "ef96ed763b43b59b33b31b362f09a02b729fa1c9"
+        }
+      ]
+    },
+    {
       "name": "scarletnx",
-      "buildsystem": "cmake",
+      "buildsystem": "cmake-ninja",
       "build-options": {
         "build-args": ["--share=network"],
         "append-path": "/usr/lib/sdk/llvm23/bin",
@@ -43,17 +79,18 @@
         "-DBUILD_TESTING=OFF",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DSNX_BUILD_3DS=ON",
-        "-DSNX_BUILD_VITA=ON"
+        "-DSNX_BUILD_VITA=ON",
+        "-DSNX_BUILD_AGB=ON"
       ],
       "post-install": [
-        "mkdir /app/lib",
+        "mkdir -p /app/lib",
         "cp /usr/lib/sdk/llvm23/lib/libLLVM.so.23.1 /app/lib/"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/scarletnx/ScarletNX",
-          "commit": "454a20e5c8eddb194afe0113ddf5e4036d2156b5"
+          "commit": "f40c145024dcfc4d70d2762d891f2911cbbd4bc9"
         }
       ]
     }
