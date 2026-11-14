@@ -89,8 +89,7 @@
       "sources": [
         {
           "type": "git",
-          "url": "https://github.com/scarletnx/ScarletNX",
-          "commit": "2d5ec80b53b5da4dde80ae2821e5edbe7804fd17"
+          "url": "https://github.com/scarletnx/ScarletNX"
         }
       ]
     }
